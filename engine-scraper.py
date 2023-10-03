@@ -10,7 +10,9 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
 
 baseUrl = os.getenv("BASE_URL", "https://earthquake.tmd.go.th/inside.html")
-apiUrl = os.getenv("API_URL", "http://192.168.31.230:3000/api/fault-data/record")
+apiUrl = os.getenv(
+    "API_URL", "https://thai-quake-api-7msd4xrndq-as.a.run.app/api/fault-data/record"
+)
 
 
 def ApiGet():
